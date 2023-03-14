@@ -33,7 +33,7 @@ minetest.register_node(modname .. ":glass_hard", {
 		silica = 1,
 		silica_reinforced = 1,
 		cracky = 4,
-		lux_absorb = 20,
+		metallic = 1,
 		scaling_time = 300
 	},
 	sunlight_propagates = true,
