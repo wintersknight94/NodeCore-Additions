@@ -21,6 +21,7 @@ if minetest.settings:get_bool(modname .. ".syrup", true) then
 	else include("treesap")
 end
 include("torch")
+include("stainedwood")
 
 ------------------------------------------------------------------------
 
