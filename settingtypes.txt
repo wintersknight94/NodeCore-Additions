@@ -1,5 +1,5 @@
 # If enabled, stumps exude 'syrup', which then solidifies to lumps of sap. Otherwise stumps simply exude the lumps of sap.
-wc_noditions.syrup (Use Syrup Method) bool true
+wc_noditions.syrup (Use Syrup Method) bool false
 
 # If enabled, carpets behave like non-living sponges in almost every way.
 wc_noditions.sierpinski (Carpets Behave Like Sponges) bool true
