@@ -14,9 +14,14 @@ local rfcall = function(pos, data)
 	ref:set_wielded_item(wield)
 end
 
+local wood = "nc_woodwork_plank.png"
+local resin = modname.. "_sap.png"
+local stain = "(" ..resin.. "^[opacity:140)^[colorize:black:64"
+
 minetest.register_node(plank, {
 		description = "Stained Wooden Plank",
-		tiles = {"nc_woodwork_plank.png^[colorize:#704214:100"}, --Sepia
+--		tiles = {"nc_woodwork_plank.png^[colorize:#704214:100"}, --Sepia
+		tiles = {wood.. "^(" ..stain.. ")"},
 		groups = {
 			choppy = 1,
 			flammable = 1,
