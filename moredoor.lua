@@ -9,7 +9,7 @@ local modname = minetest.get_current_modname()
 -- ================================================================== --
 
 nodecore.register_door(modname, "cornplank", "Popped", "nc_woodwork:staff", 1)
-nodecore.register_door(modname, "plank", "Stained Wood", "nc_woodwork:staff", 1)
+nodecore.register_door(modname, "plank_stained", "Stained Wood", "nc_woodwork:staff", 1)
 nodecore.register_door("nc_flora", "thatch", "Rattan", "nc_woodwork:staff", 1)
 --nodecore.register_door("nc_flora", "wicker", "Wicker", "nc_woodwork:staff", 1)
 --nodecore.register_door("nc_optics", "glass", "Glass", "nc_lode:rod_tempered", 3)
@@ -42,11 +42,14 @@ nodecore.register_door("nc_lode", "block_annealed", "Lode", "nc_lode:rod_tempere
 minetest.register_alias(modname.. ":panel_cornplank",				"nc_doors:panel_cornplank")
 minetest.register_alias(modname.. ":door_cornplank",				"nc_doors:door_cornplank")
 
-minetest.register_alias(modname.. ":panel_thatch",				"nc_doors:panel_thatch")
-minetest.register_alias(modname.. ":door_thatch",				"nc_doors:door_thatch")
+minetest.register_alias(modname.. ":panel_thatch",					"nc_doors:panel_thatch")
+minetest.register_alias(modname.. ":door_thatch",					"nc_doors:door_thatch")
 
-minetest.register_alias(modname.. ":panel_glass_opaque",				"nc_doors:panel_glass_opaque")
+minetest.register_alias(modname.. ":panel_glass_opaque",			"nc_doors:panel_glass_opaque")
 minetest.register_alias(modname.. ":door_glass_opaque",				"nc_doors:door_glass_opaque")
 
-minetest.register_alias(modname.. ":panel_block_annealed",				"nc_doors:panel_block_annealed")
-minetest.register_alias(modname.. ":door_block_annealed",				"nc_doors:door_block_annealed")
+minetest.register_alias(modname.. ":panel_block_annealed",			"nc_doors:panel_block_annealed")
+minetest.register_alias(modname.. ":door_block_annealed",			"nc_doors:door_block_annealed")
+
+minetest.register_alias(modname .. ":panel_plank",						modname .. ":panel_plank_stained")
+minetest.register_alias(modname .. ":door_plank",						modname .. ":door_plank_stained")

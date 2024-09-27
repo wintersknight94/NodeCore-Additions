@@ -5,7 +5,7 @@ local minetest, nodecore
 
 local modname = minetest.get_current_modname()
 
-local plank = modname .. ":plank"
+local plank = modname .. ":plank_stained"
 
 local rfcall = function(pos, data)
 	local ref = minetest.get_player_by_name(data.pname)
@@ -58,3 +58,5 @@ nodecore.register_craft({
 				{match = "nc_woodwork:plank", replace = modname .. ":plank"}
 			}
 	})
+
+minetest.register_alias(modname .. ":plank",					modname .. ":plank_stained")
