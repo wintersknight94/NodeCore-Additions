@@ -9,12 +9,15 @@ local modname = minetest.get_current_modname()
 -- ================================================================== --
 
 nodecore.register_door(modname, "cornplank", "Popped", "nc_woodwork:staff", 1)
+nodecore.register_door(modname, "plank", "Stained Wood", "nc_woodwork:staff", 1)
 nodecore.register_door("nc_flora", "thatch", "Rattan", "nc_woodwork:staff", 1)
 --nodecore.register_door("nc_flora", "wicker", "Wicker", "nc_woodwork:staff", 1)
 --nodecore.register_door("nc_optics", "glass", "Glass", "nc_lode:rod_tempered", 3)
 --nodecore.register_door("nc_optics", "glass_float", "Clear", "nc_lode:rod_tempered", 3)
 nodecore.register_door("nc_optics", "glass_opaque", "Chromatic", "nc_lode:rod_tempered", 3)
 nodecore.register_door("nc_lode", "block_annealed", "Lode", "nc_lode:rod_tempered", 5)
+
+
 
 -- ================================================================== --
 -- <> One Does Not Simply Walk Into Moredoor <> -- 
