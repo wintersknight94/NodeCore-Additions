@@ -5,11 +5,12 @@ local minetest, nodecore
 local modname = minetest.get_current_modname()
 -- <>==============================================================<> --
 minetest.register_node(modname.. ":sapnode", {
-	description = "",
+	description = "Resin",
 	tiles = {modname.. "_sap.png"},
+	use_texture_alpha = "blend",
 	groups = {
 		crumbly = 2,
-		flammable = 1,
+		flammable = 2,
 		fire_fuel = 8,
 		sapnode = 1
 	},

@@ -29,6 +29,7 @@ minetest.register_node(sapball, {
 	inventory_image = balltxr,
 	wield_image = balltxr,
 --	wield_scale = {x = 1.25, y = 1.25, z = 1.75},
+	use_texture_alpha = "blend",
 	paramtype = "light",
 	node_box = {
 	type = "fixed",
@@ -102,7 +103,7 @@ minetest.register_node(modname .. ":syrup_flowing",
 minetest.register_abm({ -- soaking abm or dnt might be better
 	label = "syrup exuding",
 	interval = 12,
-	chance = 10,
+	chance = 12,
 	nodenames = {"nc_tree:root"},
 	action = function(pos, node)
 		local above = {x = pos.x, y = pos.y + 1, z = pos.z}
