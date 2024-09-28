@@ -7,7 +7,7 @@ local modname = minetest.get_current_modname()
 minetest.register_node(modname.. ":sapnode", {
 	description = "Resin",
 	tiles = {modname.. "_sap.png"},
-	use_texture_alpha = "blend",
+--	use_texture_alpha = "blend",		--enabling this causes weird xray veiwing through the node
 	groups = {
 		crumbly = 2,
 		flammable = 2,
