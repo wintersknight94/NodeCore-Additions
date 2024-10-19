@@ -60,15 +60,17 @@ for i = 1,6 do
 			}
 	})
 
-	nodecore.register_craft({
-		label = "stain wood planks",
-		action = "pummel",
-		wield = {name = modname.. ":lump_sap"},
-		after = rfcall,
-		nodes = {
-				{match = modname.. ":plank_stained_" ..i, replace = modname.. ":plank_stained_" ..stup}
-			}
-	})
+	if i <= 5 then
+		nodecore.register_craft({
+			label = "stain wood planks",
+			action = "pummel",
+			wield = {name = modname.. ":lump_sap"},
+			after = rfcall,
+			nodes = {
+					{match = modname.. ":plank_stained_" ..i, replace = modname.. ":plank_stained_" ..stup}
+				}
+		})
+	end
 	
 	nodecore.register_craft({
 		label = "scrape stain from planks",
